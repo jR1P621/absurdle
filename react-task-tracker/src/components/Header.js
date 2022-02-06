@@ -1,16 +1,22 @@
-import PropTypes from 'prop-types';
-import Button from './Button';
+import PropTypes from 'prop-types'
+import { FaUndo, FaQuestion, FaRedoAlt } from 'react-icons/fa'
+import styled, { keyframes } from 'styled-components'
+import { pulse, flip } from 'react-animations'
 
-const Header = ({ title, onAdd }) => {
+const Header = ({ title, helpBox, reset }) => {
     return (
         <header className='header'>
-            <h1>{title}</h1>
-            <Button color='green' text='Add' onClick={onAdd} />
-        </header>
+            <FaQuestion className='button help' onClick={helpBox}></FaQuestion>
+            <h1 className='title'>{title}</h1>
+            <PulseDiv><FaRedoAlt className='button reset' onClick={reset}></FaRedoAlt></PulseDiv>
+        </header >
     )
 }
 
+export default Header
 
-Header.defaultProps = { title: 'Task Tracker', }
-Header.propTypes = { title: PropTypes.string.isRequired, }
-export default Header;
+const pulseAnimation = keyframes`${pulse}`
+
+const PulseDiv = styled.div`
+  animation: 0.1s ${pulseAnimation};
+`
