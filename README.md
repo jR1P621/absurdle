@@ -10,14 +10,14 @@ Randomized games.
 It's incomplete and a mess, but likely won't do anything else with it.
 
 Completed:
-[x] Basic gameplay
-[x] Restart button
-[x] Some animation
-[x] CSS
+- [x] Basic gameplay
+- [x] Restart button
+- [x] Some animation
+- [x] CSS
 
 Not implemented:
-[] Help button
-[] Stats
-[] Communication with backend
-[] More animation
-[] Favicon/page metadata
+- [ ] Help button
+- [ ] Stats
+- [ ] Communication with backend
+- [ ] More animation
+- [ ] Favicon/page metadata
