@@ -3,5 +3,11 @@
     "react-animations": "^1.0.0",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
