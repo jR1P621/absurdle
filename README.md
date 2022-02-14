@@ -3,7 +3,7 @@
 Starting to get my feet wet with React.
 A Wordle clone where the target word changes everytime you make a guess.
 
-Check it out here (maybe...uptime isn't 100%): http://jrip.gamezoo.org:62126
+Check it out here (maybe...uptime isn't 100%): https://jr1p621.github.io/
 
 100% front-end app.
 Randomized games.
